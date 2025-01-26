@@ -1,0 +1,17 @@
+# Nginx 日志文件
+logs/
+*.log
+
+# SSL证书文件（如果是敏感文件）
+cert/
+*.crt
+*.key
+*.pem
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器配置文件
+.idea/
+.vscode/ 

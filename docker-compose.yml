@@ -12,9 +12,8 @@ services:
       - ./cert:/etc/nginx/cert
       - ./html:/usr/share/nginx/wwwroot
     networks:
-      - default
+      - basic-network
 
 networks:
   basic-network:
     external: true
-    name: basic-network

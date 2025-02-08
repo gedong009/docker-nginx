@@ -11,9 +11,8 @@ services:
       - ./logs:/var/log/nginx
       - ./cert:/etc/nginx/cert
       - ./html:/usr/share/nginx/wwwroot
-    networks:
-      - basic-network
 
 networks:
-  basic-network:
+  default:
+    name: ${NETWORK_NAME:-basic-network}
     external: true
